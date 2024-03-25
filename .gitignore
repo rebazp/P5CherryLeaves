@@ -8,3 +8,6 @@ node_modules/
 .github/
 cloudinary_python.txt
 kaggle.json
+P5CherryLeaves/inputs/cherry-leaves/test/
+P5CherryLeaves/inputs/cherry-leaves/train/
+jupyter_notebooks
