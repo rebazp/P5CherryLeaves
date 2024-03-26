@@ -25,7 +25,6 @@ def page_summary_body():
         f"*For additional information, please visit and **read** the "
         f"[Project README file](https://github.com/rebazp/P5CherryLeaves/blob/main/README.md).")
     
-
     st.success(
         f"The project has 2 business requirements:\n"
         f"* 1 - The client is interested in conducting a study to visually show the difference of, "
