@@ -1,0 +1,5 @@
+workspace/P5CherryLeaves/jupyter_notebooks
+outputs/4/
+workspace/P5CherryLeaves/inputs/cherry-leaves/test
+workspace/P5CherryLeaves/inputs/cherry-leaves/train
+*.ipynb
