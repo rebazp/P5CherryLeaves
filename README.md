@@ -7,7 +7,7 @@
 
 ## Dataset Content
 * The dataset used in this project is sourced from [Kaggle](https://www.kaggle.com/codeinstitute/cherry-leaves). I created a user story where predictive analytics can be applied in a real project in the workplace.
-* The dataset contains over four thousand images taken from the client's cherry plantation. The images show healthy cherry leaves and leaves that have been infected with powdery mildew. Since the cherry plantation crop is one of the finest products in the client's portfolio, the quality of the product is of high concern for the company.
+* The dataset contains over 4,000 images taken from the client's cherry plantation. The images show healthy cherry leaves and leaves that have been infected with powdery mildew. Since the cherry plantation crop is one of the finest products in the client's portfolio, the quality of the product is of high concern for the company.
 
 ## Business Requirements
 
@@ -23,38 +23,120 @@ Farmy & Foods is grappling with powdery mildew affecting their cherry plantation
 * Cherry tree foliage afflicted by powdery mildew displays unique visual characteristics when contrasted with the appearance of healthy cherry leaves.
 
 ### Validation
-* Dataset Examination: Confirm the hypothesis through exploratory data analysis (EDA) of the dataset, employing techniques like visualizing samples of both healthy and powdery mildew-affected cherry leaves to detect any discernible patterns or distinctions.
+* **Dataset Examination**: Confirm the hypothesis through exploratory data analysis (EDA) of the dataset, employing techniques like visualizing samples of both healthy and powdery mildew-affected cherry leaves to detect any discernible patterns or distinctions.
 
-* Model Creation: Develop a machine learning (ML) model utilizing Convolutional Neural Networks (CNNs) to discern between healthy and powdery mildew-infected cherry leaves. Validate the model's efficacy and performance using suitable validation methods.
+* **Model Creation**: Develop a machine learning (ML) model utilizing Convolutional Neural Networks (CNNs) to discern between healthy and powdery mildew-infected cherry leaves. Validate the model's efficacy and performance using suitable validation methods.
 
-* Assessment: Assess the model's effectiveness on an independent test set to verify its capacity to generalize. Utilize metrics like accuracy to gauge its proficiency in identifying powdery mildew.
+* **Assessment**: Assess the model's effectiveness on an independent test set to verify its capacity to generalize. Utilize metrics like accuracy to gauge its proficiency in identifying powdery mildew.
 
 
 ## The rationale to map the business requirements to the Data Visualisations and ML tasks
 
 #### Business requirements
-* Visual Discrimination: Utilize visual representations of cherry leaf images to distinguish between healthy leaves and those afflicted by powdery mildew. This facilitates the identification of any unique features present in affected leaves.
+* **Visual Discrimination**: Utilize visual representations of cherry leaf images to distinguish between healthy leaves and those afflicted by powdery mildew. This facilitates the identification of any unique features present in affected leaves.
 
-* Prediction: Construct a machine learning (ML) model capable of predicting whether a cherry leaf is healthy or infected with powdery mildew, based on visual cues extracted from the images.
+* **Prediction**: Construct a machine learning (ML) model capable of predicting whether a cherry leaf is healthy or infected with powdery mildew, based on visual cues extracted from the images.
 
 #### Rationale
-* Data Visualization: Employing visual analysis of the dataset aids in comprehending the characteristics and disparities within healthy and afflicted cherry leaves, facilitating the selection and extraction of relevant features for model development.
+* **Data Visualization**: Employing visual analysis of the dataset aids in comprehending the characteristics and disparities within healthy and afflicted cherry leaves, facilitating the selection and extraction of relevant features for model development.
 
-* ML Tasks: Implementing Convolutional Neural Networks (CNNs) harnesses the power of deep learning to automatically discern and recognize intricate patterns within images, thereby enabling precise classification between healthy and affected leaves.
+* **ML Tasks**: Implementing Convolutional Neural Networks (CNNs) harnesses the power of deep learning to automatically discern and recognize intricate patterns within images, thereby enabling precise classification between healthy and affected leaves.
 
 
 ## ML Business Case
-* Enhanced Efficiency: The adoption of a machine learning (ML) system for immediate identification of powdery mildew on cherry leaves leads to a substantial reduction in manual inspection time, thereby enhancing the overall efficiency of the process.
+* **Enhanced Efficiency**: The adoption of a machine learning (ML) system for immediate identification of powdery mildew on cherry leaves leads to a substantial reduction in manual inspection time, thereby enhancing the overall efficiency of the process.
 
-* Scalability and Reproducibility: Achieving success in this initiative has the potential to facilitate the deployment of comparable ML-driven detection systems for various other crops. This would bolster scalability and reproducibility across diverse agricultural contexts.
+* **Scalability and Reproducibility**: Achieving success in this initiative has the potential to facilitate the deployment of comparable ML-driven detection systems for various other crops. This would bolster scalability and reproducibility across diverse agricultural contexts.
 
 
 ## Dashboard Design
-* List all dashboard pages and their content, either blocks of information or widgets, like buttons, checkboxes, images, or any other items, that your dashboard library supports.
-* Finally, during the project development, you may revisit your dashboard plan to update a given feature (for example, at the beginning of the project, you were confident you would use a given plot to display an insight, but later, you chose another plot type).
+
+### **Project Overview**
+
+* Provides an extensive summary of powdery mildew, a fungal disease impacting cherry trees, detailing its characteristics, effects, and management approaches.
+* Describes powdery mildew as a fungal infection affecting various plants, notably cherry trees, thriving in warm, humid conditions.
+* Explains its appearance as a powdery, white growth on leaves, shoots, and sometimes on the fruit.
+* Notes that the dataset is acquired from Kaggle and includes images of both healthy cherry leaves and leaves affected by powdery mildew.
+* Encourages readers to refer to the Project README file for additional information.
+* Highlights the project's primary business requirements: 
+* Visually differentiating between healthy and powdery mildew-infected cherry leaves 
+* Developing a predictive model for leaf health assessment.
+
+* #### **Dataset Details**
+
+* Obtained from Kaggle, comprising over 4,000 images from the client's crop fields, showcasing healthy and powdery mildew-infected cherry leaves.
+* Promotes exploration of the dataset and encourages reading of the README file for deeper insights.
+
+* #### **Business Objectives**
+
+1 - The client is interested in conducting a study to visually differentiate a healthy cherry leaf from one with powdery mildew.
+
+2 - The client is interested in predicting if a cherry leaf is healthy or contains powdery mildew.
+
+* ### **Project Hypothesis**
+
+* States that powdery mildew-affected cherry leaves display distinct visual patterns, particularly along the leaf edges, distinguishing them from healthy leaves.
+* Emphasizes the identification of these unique patterns and proposes validation through exploratory data analysis (EDA) on the dataset, including visualization of healthy and affected cherry leaf samples.
+
+* ### **Leaf Visualizer**
+
+* Generates healthy and mildew-infected leaves for visual comparison, aiding in distinguishing between the two.
+* Allows users to refresh the montage, select labels for viewing specific subsets of images, and adjust montage sizes.
+* Provides a grid of randomly selected images based on chosen labels for visual inspection.
+
+* #### **Visual Contrast**
+
+* Discernible variances are noted between typical and variant images.
+* The shapes of both powdery mildew-infected and healthy leaves remain identifiable.
+* Notable variations in color distinguish between healthy and powdery mildew-infected leaves, with healthy leaves displaying a more vibrant green hue.
+* Users can update the montage by activating the 'Create Montage' option.
+* The tool permits users to choose labels to view specific image subsets.
+* It presents a grid of randomly selected images corresponding to the selected label.
+* Users can customize montage dimensions by adjusting the number of rows and columns.
+
+* ### **Mildew Identification**
+
+* The client's aim is to ascertain whether a specific leaf is afflicted by mildew.
+
+* #### **Real-Time Prediction and Data Retrieval**
+* Enables users to upload samples of mildew-infected leaves for immediate prediction.
+
+* Offers the choice to acquire a collection of mildew-infected and healthy leaf images from Kaggle.
+
+* #### **Real-Time Prediction Feature**
+* Users have the option to upload individual or multiple leaf images for assessment.
+
+* Provides details regarding the uploaded image(s) such as name and size.
+
+* Adjusts the size of the uploaded image(s) to fit the prediction model (via the resize_input_image function).
+
+* Utilizes a pre-existing model to forecast the likelihood and classification of mildew infection (through the load_model_and_predict function).
+
+* Visualizes the predictions and their corresponding probabilities (via the plot_predictions_probabilities function).
+
+* #### **Analysis Report**
+
+* Produces a report table presenting the names of uploaded images alongside their respective prediction outcomes.
+
+* Offers the choice to download the report as a CSV file.
+
+* ### **ML Performance**
+
+* #### **Train, Validation, and Test Set Label Distribution**
+* Illustrates the distribution of labels across the training, validation, and test datasets through an image display.
+
+* #### **Model Progression**
+* Graphically represents the training accuracy and losses of the model throughout its training period.
+
+* Consists of distinct images illustrating the model's training accuracy (model_training_acc.png) and training losses (model_training_losses.png).
+
+* #### **Overall Performance on Test Set**
+* Offers a structured presentation of the model's evaluation metrics on the test dataset.
+
+* Retrieves and showcases the evaluation outcomes for loss and accuracy using the load_test_evaluation function.
 
 
-## Unfixed Bugs
+* ## Unfixed Bugs
 * You will need to mention unfixed bugs and why they were unfixed. This section should include shortcomings of the frameworks or technologies used. Although time can be a significant variable for consideration, paucity of time and difficulty understanding implementation is not a valid reason to leave bugs unfixed.
 
 ## Deployment
