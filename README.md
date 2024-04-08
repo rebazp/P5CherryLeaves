@@ -5,6 +5,24 @@
 
 * The goal is to create a ML model that can predict if a cherry leaf is infected with powdery mildew or uninfected. The model need to have a accuracy rate of minimum 97% and my model reached 100% accuracy.
 
+[View Live Version Here]()
+
+# Table of Contents
+* [Dataset Content](#dataset-content)
+* [Business Requirements](#business-requirements)
+* [Hypothesis & How To Validate](#hypothesis--how-to-validate)
+* [The Rationale To Map The Business Requirements To The Data Visualizations & ML Tasks](#the-rationale-to-map-the-business-requirements-to-the-data-visualizations--ml-tasks)
+* [ML Business Case](#ml-business-case)
+* [Dashboard Design](#dashboard-design)
+* [Bugs](#bugs)
+* [Unfixed Bugs](#unfixed-bugs)
+* [Testing](#testing)
+* [Deployment](#deployment)
+* [Main Data Analysis & Machine Learning Libraries](#main-data-analysis--machine-learning-libraries)
+* [Credits](#credits)
+* [Content](#content)
+* [Acknowledgements](#acknowledgements)
+
 ## Dataset Content
 * The dataset used in this project is sourced from [Kaggle](https://www.kaggle.com/codeinstitute/cherry-leaves). I created a user story where predictive analytics can be applied in a real project in the workplace.
 * The dataset contains over 4,000 images taken from the client's cherry plantation. The images show healthy cherry leaves and leaves that have been infected with powdery mildew. Since the cherry plantation crop is one of the finest products in the client's portfolio, the quality of the product is of high concern for the company.
@@ -17,7 +35,7 @@ Farmy & Foods is grappling with powdery mildew affecting their cherry plantation
 * 2 - The client is interested in predicting if a cherry leaf is healthy or contains powdery mildew.
 
 
-## Hypothesis and how to validate?
+## Hypothesis & How To Validate
 
 ### Hypothesis
 * Cherry tree foliage afflicted by powdery mildew displays unique visual characteristics when contrasted with the appearance of healthy cherry leaves.
@@ -30,9 +48,9 @@ Farmy & Foods is grappling with powdery mildew affecting their cherry plantation
 * **Assessment**: Assess the model's effectiveness on an independent test set to verify its capacity to generalize. Utilize metrics like accuracy to gauge its proficiency in identifying powdery mildew.
 
 
-## The rationale to map the business requirements to the Data Visualisations and ML tasks
+## The Rationale To Map The Business Requirements To The Data Visualizations & ML Tasks
 
-#### Business requirements
+#### Business Requirements
 * **Visual Discrimination**: Utilize visual representations of cherry leaf images to distinguish between healthy leaves and those afflicted by powdery mildew. This facilitates the identification of any unique features present in affected leaves.
 
 * **Prediction**: Construct a machine learning (ML) model capable of predicting whether a cherry leaf is healthy or infected with powdery mildew, based on visual cues extracted from the images.
@@ -46,7 +64,7 @@ Farmy & Foods is grappling with powdery mildew affecting their cherry plantation
 ## ML Business Case
 * **Enhanced Efficiency**: The adoption of a machine learning (ML) system for immediate identification of powdery mildew on cherry leaves leads to a substantial reduction in manual inspection time, thereby enhancing the overall efficiency of the process.
 
-* **Scalability and Reproducibility**: Achieving success in this initiative has the potential to facilitate the deployment of comparable ML-driven detection systems for various other crops. This would bolster scalability and reproducibility across diverse agricultural contexts.
+* **Scalability & Reproducibility**: Achieving success in this initiative has the potential to facilitate the deployment of comparable ML-driven detection systems for various other crops. This would bolster scalability and reproducibility across diverse agricultural contexts.
 
 
 ## Dashboard Design
@@ -62,29 +80,29 @@ Farmy & Foods is grappling with powdery mildew affecting their cherry plantation
 * Visually differentiating between healthy and powdery mildew-infected cherry leaves 
 * Developing a predictive model for leaf health assessment.
 
-* #### **Dataset Details**
+#### **Dataset Details**
 
 * Obtained from Kaggle, comprising over 4,000 images from the client's crop fields, showcasing healthy and powdery mildew-infected cherry leaves.
 * Promotes exploration of the dataset and encourages reading of the README file for deeper insights.
 
-* #### **Business Objectives**
+#### **Business Objectives**
 
-1 - The client is interested in conducting a study to visually differentiate a healthy cherry leaf from one with powdery mildew.
+* The client is interested in conducting a study to visually differentiate a healthy cherry leaf from one with powdery mildew.
 
-2 - The client is interested in predicting if a cherry leaf is healthy or contains powdery mildew.
+* The client is interested in predicting if a cherry leaf is healthy or contains powdery mildew.
 
-* ### **Project Hypothesis**
+### **Project Hypothesis**
 
 * States that powdery mildew-affected cherry leaves display distinct visual patterns, particularly along the leaf edges, distinguishing them from healthy leaves.
 * Emphasizes the identification of these unique patterns and proposes validation through exploratory data analysis (EDA) on the dataset, including visualization of healthy and affected cherry leaf samples.
 
-* ### **Leaf Visualizer**
+### **Leaf Visualizer**
 
 * Generates healthy and mildew-infected leaves for visual comparison, aiding in distinguishing between the two.
 * Allows users to refresh the montage, select labels for viewing specific subsets of images, and adjust montage sizes.
 * Provides a grid of randomly selected images based on chosen labels for visual inspection.
 
-* #### **Visual Contrast**
+#### **Visual Contrast**
 
 * Discernible variances are noted between typical and variant images.
 * The shapes of both powdery mildew-infected and healthy leaves remain identifiable.
@@ -94,16 +112,16 @@ Farmy & Foods is grappling with powdery mildew affecting their cherry plantation
 * It presents a grid of randomly selected images corresponding to the selected label.
 * Users can customize montage dimensions by adjusting the number of rows and columns.
 
-* ### **Mildew Identification**
+### **Mildew Identification**
 
 * The client's aim is to ascertain whether a specific leaf is afflicted by mildew.
 
-* #### **Real-Time Prediction and Data Retrieval**
+#### **Real-Time Prediction & Data Retrieval**
 * Enables users to upload samples of mildew-infected leaves for immediate prediction.
 
 * Offers the choice to acquire a collection of mildew-infected and healthy leaf images from Kaggle.
 
-* #### **Real-Time Prediction Feature**
+#### **Real-Time Prediction Feature**
 * Users have the option to upload individual or multiple leaf images for assessment.
 
 * Provides details regarding the uploaded image(s) such as name and size.
@@ -114,30 +132,36 @@ Farmy & Foods is grappling with powdery mildew affecting their cherry plantation
 
 * Visualizes the predictions and their corresponding probabilities (via the plot_predictions_probabilities function).
 
-* #### **Analysis Report**
+#### **Analysis Report**
 
 * Produces a report table presenting the names of uploaded images alongside their respective prediction outcomes.
 
 * Offers the choice to download the report as a CSV file.
 
-* ### **ML Performance**
+### **ML Performance**
 
-* #### **Train, Validation, and Test Set Label Distribution**
+#### **Train, Validation, & Test Set Label Distribution**
 * Illustrates the distribution of labels across the training, validation, and test datasets through an image display.
 
-* #### **Model Progression**
+#### **Model Progression**
 * Graphically represents the training accuracy and losses of the model throughout its training period.
 
 * Consists of distinct images illustrating the model's training accuracy (model_training_acc.png) and training losses (model_training_losses.png).
 
-* #### **Overall Performance on Test Set**
+#### **Overall Performance on Test Set**
 * Offers a structured presentation of the model's evaluation metrics on the test dataset.
 
 * Retrieves and showcases the evaluation outcomes for loss and accuracy using the load_test_evaluation function.
 
 
-* ## Unfixed Bugs
-* You will need to mention unfixed bugs and why they were unfixed. This section should include shortcomings of the frameworks or technologies used. Although time can be a significant variable for consideration, paucity of time and difficulty understanding implementation is not a valid reason to leave bugs unfixed.
+## Bugs
+* I didn't encounter any bugs during this project.
+
+## Unfixed Bugs
+* There is no unfixed bugs.
+
+## Testing
+* In this project, only manual testing has been conducted. The functionality of all aspects of the application has been verified on Heroku, and they operate as intended.
 
 ## Deployment
 ### Heroku
@@ -154,27 +178,31 @@ Farmy & Foods is grappling with powdery mildew affecting their cherry plantation
 6. If the slug size is too large then add large files not required for the app to the .slugignore file. 
 
 
-## Main Data Analysis and Machine Learning Libraries
-* Here you should list the libraries used in the project and provide an example(s) of how you used these libraries.
+## Main Data Analysis & Machine Learning Libraries
+* NumPy: NumPy stands as a cornerstone package for scientific computation in Python, furnishing comprehensive support for arrays, matrices, and a suite of mathematical functions tailored for operation on these arrays. In this project, NumPy is extensively employed during data preparation tasks.
 
+* Pandas: Integral for data manipulation, cleansing, and analysis, Pandas is instrumental in facilitating various operations such as loading datasets, refining data, conducting exploratory data analysis (EDA), and structuring data for modeling purposes.
+
+* Matplotlib, employed in conjunction with Seaborn, is utilized to craft customizable and high-quality plots and visualizations, offering precise control over the visual aspects of graphical representations.
+
+* Seaborn: Seaborn, renowned for its capacity to craft visually captivating statistical visualizations, plays a pivotal role in producing diverse plots and statistical graphics to elucidate patterns or relationships inherent within the data.
+
+* Streamlit: Streamlit, a Python library, is employed to develop web applications tailored for data science and machine learning ventures, streamlining the conversion of data scripts into accessible web applications. Within this project, Streamlit serves as a dashboard interface.
+
+* Jupyter: Jupyter, an open-source web application, allows users to author and distribute documents containing live code, mathematical equations, visualizations, and narrative text. Throughout this project, Jupyter serves as an open integrated development environment (IDE) utilized during data collection and machine learning phases to enhance visualization of the processes.
+
+* Tensorflow: TensorFlow, an open-source machine learning framework created by Google, is extensively utilized for constructing and training machine learning models. Within this project, TensorFlow played a crucial role in the machine learning phase, particularly during the training of the model.
 
 ## Credits 
 
-* In this section, you need to reference where you got your content, media and from where you got extra help. It is common practice to use code from other repositories and tutorials. However, it is necessary to be very specific about these sources to avoid plagiarism. 
-* You can break the credits section up into Content and Media, depending on what you have included in your project. 
+* The entirety of the code utilized in this project originates from the Malaria Detector tutorial video series included in the course material. I followed the video series to create the notebooks and dashboard, making adjustments to the code to suit my project's requirements. The initial template for starting the project is based on the one provided in the course material.
 
 ### Content 
 
-- The text for the Home page was taken from Wikipedia Article A.
-- Instructions on how to implement form validation on the Sign-Up page were taken from [Specific YouTube Tutorial](https://www.youtube.com/).
-- The icons in the footer were taken from [Font Awesome](https://fontawesome.com/).
+The content presented on the project summary page draws inspiration from:
+- [Treefruit](https://treefruit.wsu.edu/crop-protection/disease-management/cherry-powdery-mildew/#:~:text=Powdery%20mildew%20of%20sweet%20and,1)
+- [Garden Design](https://www.gardendesign.com/how-to/powdery-mildew.html)
+- [Wikipedia](https://en.wikipedia.org/wiki/Powdery_mildew)
 
-### Media
-
-- The photos used on the home and sign-up page are from This Open-Source site.
-- The images used for the gallery page were taken from this other open-source site.
-
-
-
-## Acknowledgements (optional)
+## Acknowledgements
 * Thank the people that provided support throughout this project.
