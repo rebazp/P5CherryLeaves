@@ -18,6 +18,7 @@
 * [Unfixed Bugs](#unfixed-bugs)
 * [Testing](#testing)
 * [Deployment](#deployment)
+* [Technologies Used](#technologies-used)
 * [Main Data Analysis & Machine Learning Libraries](#main-data-analysis--machine-learning-libraries)
 * [Credits](#credits)
 * [Content](#content)
@@ -176,6 +177,20 @@ Farmy & Foods is grappling with powdery mildew affecting their cherry plantation
 4. Select the branch you want to deploy, then click Deploy Branch.
 5. The deployment process should happen smoothly if all deployment files are fully functional. Click now the button Open App on the top of the page to access your App.
 6. If the slug size is too large then add large files not required for the app to the .slugignore file. 
+
+
+## Technologies Used
+
+### Platforms
+* [Heroku](https://en.wikipedia.org/wiki/Heroku) Deploy this project
+* [Jupiter Notebook](https://jupyter.org/) Edit code for this project
+* [Kaggle](https://www.kaggle.com/) Download datasets for this project
+* [GitHub](https://github.com/) Store the project code after being pushed from Gitpod.
+* [Gitpod](https://www.gitpod.io/) Write the code and its terminal to 'commit' to GitHub and 'push' to GitHub Pages.
+
+### Languages
+* [Python](https://www.python.org/)
+* [Markdown](https://en.wikipedia.org/wiki/Markdown)
 
 
 ## Main Data Analysis & Machine Learning Libraries
