@@ -193,6 +193,20 @@ Farmy & Foods is grappling with powdery mildew affecting their cherry plantation
 
 * Tensorflow: TensorFlow, an open-source machine learning framework created by Google, is extensively utilized for constructing and training machine learning models. Within this project, TensorFlow played a crucial role in the machine learning phase, particularly during the training of the model.
 
+* PIL (Python Imaging Library): Utilized for managing image data within the project, including tasks such as image preprocessing, loading, saving, or basic manipulation of images within the mildew detector page on Streamlit.
+
+* Base64: Employed for encoding and decoding binary image data in the data_management.py file.
+
+* Joblib: Utilized for caching or executing specific functions in parallel, particularly beneficial in machine learning tasks that involve repetitive computations or grid searches for hyperparameter tuning. The joblib library is specifically used for loading Pickle (.pkl) files through the load_pkl_file function.
+
+* Datetime: Utilized for handling timestamps, managing date-related computations, or parsing dates and times, particularly relevant in scenarios involving time-series data or logging. In this project, datetime is utilized to generate a timestamp in a specific format, which is then integrated into the filename while creating a downloadable report.
+
+* Itertools: A module within Python's standard library offering various tools for efficiently creating and working with iterators. The itertools library is employed within the image_montage function to generate combinations of row and column indices for arranging images in a grid-like layout.
+
+* Random: The random library is employed in the image_montage function to select images randomly in cases where the number of images in a directory surpasses the available grid spaces for the montage.
+
+* OS: Utilized for managing file paths.
+
 ## Credits 
 
 * The entirety of the code utilized in this project originates from the Malaria Detector tutorial video series included in the course material. I followed the video series to create the notebooks and dashboard, making adjustments to the code to suit my project's requirements. The initial template for starting the project is based on the one provided in the course material.
