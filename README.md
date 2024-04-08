@@ -165,6 +165,7 @@ Farmy & Foods is grappling with powdery mildew affecting their cherry plantation
 * In this project, only manual testing has been conducted. The functionality of all aspects of the application has been verified on Heroku, and they operate as intended.
 
 ## Deployment
+
 ### Heroku
 
 * The App live link is: https://YOUR_APP_NAME.herokuapp.com/ 
