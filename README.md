@@ -205,4 +205,4 @@ The content presented on the project summary page draws inspiration from:
 - [Wikipedia](https://en.wikipedia.org/wiki/Powdery_mildew)
 
 ## Acknowledgements
-* Thank the people that provided support throughout this project.
+* I would like to thank my mentor Rohit Sharma for guiding me during this project.
