@@ -3,6 +3,4 @@ workspace/P5CherryLeaves/inputs/cherry-leaves/test/healthy
 workspace/P5CherryLeaves/inputs/cherry-leaves/test/powdery_mildew
 workspace/P5CherryLeaves/inputs/cherry-leaves/train/healthy
 workspace/P5CherryLeaves/inputs/cherry-leaves/train/powdery_mildew
-workspace/P5CherryLeaves/inputs/cherry-leaves/validation/powdery_mildew
-workspace/P5CherryLeaves/inputs/cherry-leaves/validation/healthy
 *.ipynb
