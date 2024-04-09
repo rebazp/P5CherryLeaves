@@ -62,18 +62,22 @@ def page_ml_performance_metrics():
     st.write("### Generalized Performance on Test Set")
     st.dataframe(pd.DataFrame(load_test_evaluation(version), index=['Loss', 'Accuracy']))
 
-    st.write("### RGB Channels")
-    pointer = 66
-    label = labels[0]  # Select healthy or powdery_mildew
-    image_dir = os.path.join(test_path, label)
-    if os.path.isdir(image_dir):
-        image_files = os.listdir(image_dir)
-        if image_files:
-            image_path = os.path.join(image_dir, image_files[pointer])
-            pil_image = Image.open(image_path)
-            fig = plot_rgb_channels(pil_image)
-            st.pyplot(fig)
-        else:
-            st.write("Error: No image files found in directory:", image_dir)
+st.write("### RGB Channels")
+pointer = 66
+label = labels[0]  # Select healthy or powdery_mildew
+image_dir = os.path.join(test_path, label)
+if os.path.isdir(image_dir):
+    image_files = os.listdir(image_dir)
+    if image_files:
+        image_path = os.path.join(image_dir, image_files[pointer])
+        pil_image = Image.open(image_path)
+        fig = plot_rgb_channels(pil_image)
+        st.pyplot(fig)
     else:
-        st.write("Error: Directory not found:", image_dir)
+        st.write("Error: No image files found in directory:", image_dir)
+else:
+    st.write("Directory not found:", image_dir)
+    default_image_path = "path_to_default_image.jpg"  # Provide the path to your default image
+    default_image = Image.open(default_image_path)
+    default_fig = plot_rgb_channels(default_image)
+    st.pyplot(default_fig)
