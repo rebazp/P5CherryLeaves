@@ -14,6 +14,7 @@
 * [The Rationale To Map The Business Requirements To The Data Visualizations & ML Tasks](#the-rationale-to-map-the-business-requirements-to-the-data-visualizations--ml-tasks)
 * [ML Business Case](#ml-business-case)
 * [Dashboard Design](#dashboard-design)
+* [CRISP DM Process](#cross-industry-standard-process-for-data-mining)
 * [Bugs](#bugs)
 * [Unfixed Bugs](#unfixed-bugs)
 * [Testing](#testing)
@@ -155,6 +156,24 @@ Farmy & Foods is grappling with powdery mildew affecting their cherry plantation
 * Retrieves and showcases the evaluation outcomes for loss and accuracy using the load_test_evaluation function.
 
 
+## Cross-Industry Standard Process For Data Mining
+CRISP-DM, an acronym for Cross-Industry Standard Process for Data Mining, is a well-established approach utilized to steer data mining endeavors.
+
+* In its capacity as a methodology, CRISP-DM delineates the common stages of a project, the associated tasks within each stage, and elucidates the interconnections among these tasks.
+
+* Functioning as a process model, CRISP-DM furnishes an outline of the data mining life cycle.
+
+**Source**: [IBM - Crisp Overview](https://www.ibm.com/docs/it/spss-modeler/saas?topic=dm-crisp-help-overview)
+
+**The procedure is documented utilizing the Kanban Board available through GitHub within the project section of this repository.** [Cherry Leaves Project](https://github.com/users/rebazp/projects/7)
+
+* A kanban board serves as an agile project management tool aimed at aiding in the visualization of tasks, controlling work-in-progress, and optimizing efficiency, also known as flow. It's beneficial for both agile and DevOps teams in structuring their daily tasks. Kanban boards utilize cards, columns, and a focus on continuous improvement to assist technology and service teams in committing to an appropriate workload and completing it effectively.
+
+![Kanban Main](images/projectboard.jpg)
+* The CRISP-DM process is segmented into sprints, with each sprint containing Epics derived from individual CRISP-DM tasks, which are then further subdivided into tasks. Each task progresses through stages such as To Do, In Progress, and Review status as part of the workflow, and includes comprehensive details.
+
+![Kanban Readme](images/projectreadme.jpg)
+
 ## Bugs
 * I didn't encounter any bugs during this project.
 
@@ -162,7 +181,7 @@ Farmy & Foods is grappling with powdery mildew affecting their cherry plantation
 * There is no unfixed bugs.
 
 ## Testing
-* In this project, only manual testing has been conducted. The functionality of all aspects of the application has been verified on Heroku, and they operate as intended.
+* In this project, only manual testing has been conducted. The functionality of all aspects of the application has been verified on Streamlit and Heroku, and they operate as intended.
 
 ## Deployment
 
