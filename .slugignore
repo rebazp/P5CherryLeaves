@@ -1,5 +1,4 @@
 workspace/P5CherryLeaves/jupyter_notebooks
-inputs
 workspace/P5CherryLeaves/inputs/cherry-leaves/test
 workspace/P5CherryLeaves/inputs/cherry-leaves/train
 *.ipynb
