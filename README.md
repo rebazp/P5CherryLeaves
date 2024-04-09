@@ -156,7 +156,7 @@ Farmy & Foods is grappling with powdery mildew affecting their cherry plantation
 * Retrieves and showcases the evaluation outcomes for loss and accuracy using the load_test_evaluation function.
 
 
-## Cross-Industry Standard Process For Data Mining
+## CRISP-DM
 CRISP-DM, an acronym for Cross-Industry Standard Process for Data Mining, is a well-established approach utilized to steer data mining endeavors.
 
 * In its capacity as a methodology, CRISP-DM delineates the common stages of a project, the associated tasks within each stage, and elucidates the interconnections among these tasks.
@@ -182,6 +182,19 @@ CRISP-DM, an acronym for Cross-Industry Standard Process for Data Mining, is a w
 
 ## Testing
 * In this project, only manual testing has been conducted. The functionality of all aspects of the application has been verified on Streamlit and Heroku, and they operate as intended.
+
+### Leaf Visualizer
+* Choosing the difference between average and variability image we get the desired action.
+![Leaf Visualizer](images/leafvisualizervariability.jpg)
+
+* Choosing the difference between average mildew infected and uninfected leaves we get the desired action.
+![Leaf Visualizer Infected](images/leafvisualizerinfected.jpg)
+
+* Choosing the image montage healthy we get the desires action.
+![Leaf Visualizer Infected](images/leafvisualizermontagehealthy.jpg)
+
+* Choosing the image montage powdery_mildew we get the desires action.
+![Leaf Visualizer Infected](images/leafvisualizermontageinfected.jpg)
 
 ## Deployment
 
