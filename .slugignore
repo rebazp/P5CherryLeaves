@@ -1,4 +1,5 @@
-inputs/
+inputs/cherry-leaves/train
+inputs/cherry-leaves/test/powder_mildew
 dev_requirements.txt
 *.ipynb
 *.webp
