@@ -183,6 +183,10 @@ CRISP-DM, an acronym for Cross-Industry Standard Process for Data Mining, is a w
 ## Testing
 * In this project, only manual testing has been conducted. The functionality of all aspects of the application has been verified on Streamlit and Heroku, and they operate as intended.
 
+### Project Summary
+* Entering the streamlit project your are welcomed to the project summary page containing a short summary of the project.
+![Project Summary](images/projectsummary.jpg)
+
 ### Leaf Visualizer
 * Choosing the difference between average and variability image we get the desired action.
 ![Leaf Visualizer](images/leafvisualizervariability.jpg)
@@ -195,6 +199,19 @@ CRISP-DM, an acronym for Cross-Industry Standard Process for Data Mining, is a w
 
 * Choosing the image montage powdery_mildew we get the desires action.
 ![Leaf Visualizer Infected](images/leafvisualizermontageinfected.jpg)
+
+### Mildew Detection
+* Uploading a picture from the dataset we can see if the leaf is infected or uninfected.
+![Mildew Detection](images/mildewdetection.jpg)
+
+### Project Hypothesis
+* Entering the Project Hypothesis page we can read a short hypothesis for the project.
+![Project Hypothesis](images/projecthypothesis.jpg)
+
+### ML Performance Metrics
+* Entering the ML Performance Metric page we can see the train, validation and test sets. Model history and a RGB chart.
+![ML Performance Metrics 1](images/mlperformance1.jpg)
+![ML Performance Metrics 2](images/mlperformance2.jpg)
 
 ## Deployment
 
