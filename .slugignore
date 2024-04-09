@@ -4,3 +4,4 @@ dev_requirements.txt
 *.ipynb
 *.webp
 kaggle.json
+inputs/
