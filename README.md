@@ -218,7 +218,7 @@ CRISP-DM, an acronym for Cross-Industry Standard Process for Data Mining, is a w
 
 ### Heroku
 
-* The App live link is: https://YOUR_APP_NAME.herokuapp.com/ 
+* The App live link is: https://cherry-leaves-live-8f4fa15591ea.herokuapp.com/ 
 * Set the runtime.txt Python version to a [Heroku-20](https://devcenter.heroku.com/articles/python-support#supported-runtimes) stack currently supported version.
 * The project was deployed to Heroku using the following steps.
 
