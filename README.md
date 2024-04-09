@@ -175,7 +175,7 @@ CRISP-DM, an acronym for Cross-Industry Standard Process for Data Mining, is a w
 ![Kanban Readme](images/projectreadme.jpg)
 
 ## Bugs
-* I didn't encounter any bugs during this project.
+* During the deployment to Heroku the project size was to big, around 550 MB while the limit on Heroku is 500 MB. To solve this I had to remove most of the images from the input folders to meet the Heroku requirements. I also had to make some changes to the .slugignore file to decompress the project.
 
 ## Unfixed Bugs
 * There is no unfixed bugs.
