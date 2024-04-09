@@ -5,7 +5,7 @@
 
 * The goal is to create a ML model that can predict if a cherry leaf is infected with powdery mildew or uninfected. The model need to have a accuracy rate of minimum 97% and my model reached 100% accuracy.
 
-[View Live Version Here]()
+[View Live Version Here](https://cherry-leaves-live-8f4fa15591ea.herokuapp.com/)
 
 # Table of Contents
 * [Dataset Content](#dataset-content)
@@ -212,6 +212,7 @@ CRISP-DM, an acronym for Cross-Industry Standard Process for Data Mining, is a w
 * Entering the ML Performance Metric page we can see the train, validation and test sets. Model history and a RGB chart.
 ![ML Performance Metrics 1](images/mlperformance1.jpg)
 ![ML Performance Metrics 2](images/mlperformance2.jpg)
+
 
 ## Deployment
 
