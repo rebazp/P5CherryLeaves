@@ -65,11 +65,15 @@ def page_ml_performance_metrics():
     st.write("### RGB Channels")
     pointer = 66
     label = labels[0]  # Select healthy or powdery_mildew
-    image_files = os.listdir(os.path.join(test_path, label))
-    if image_files:
-        image_path = os.path.join(test_path, label, image_files[pointer])
-        pil_image = Image.open(image_path)
-        fig = plot_rgb_channels(pil_image)
-        st.pyplot(fig)
+    image_dir = os.path.join(test_path, label)
+    if os.path.isdir(image_dir):
+        image_files = os.listdir(image_dir)
+        if image_files:
+            image_path = os.path.join(image_dir, image_files[pointer])
+            pil_image = Image.open(image_path)
+            fig = plot_rgb_channels(pil_image)
+            st.pyplot(fig)
+        else:
+            st.write("Error: No image files found in directory:", image_dir)
     else:
-        st.write("Error: No image files found in directory:", os.path.join(test_path, label))
+        st.write("Error: Directory not found:", image_dir)
