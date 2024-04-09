@@ -1,6 +1,4 @@
 inputs/cherry-leaves/train
-inputs/cherry-leaves/test/powder_mildew
-inputs/cherry-leaves/test/healthy
 dev_requirements.txt
 *.ipynb
 *.webp
