@@ -172,7 +172,7 @@ CRISP-DM, an acronym for Cross-Industry Standard Process for Data Mining, is a w
 ![Kanban Main](images/projectboard.jpg)
 * The CRISP-DM process is segmented into sprints, with each sprint containing Epics derived from individual CRISP-DM tasks, which are then further subdivided into tasks. Each task progresses through stages such as To Do, In Progress, and Review status as part of the workflow, and includes comprehensive details.
 
-![Kanban Readme](images/projectreadme.jpg)
+![Kanban Readme](images/projectuserstory.jpg)
 
 ## Bugs
 * During the deployment to Heroku the project size was to big, around 550 MB while the limit on Heroku is 500 MB. To solve this I had to remove most of the images from the input folders to meet the Heroku requirements. I also had to make some changes to the .slugignore file to decompress the project.
@@ -184,6 +184,18 @@ CRISP-DM, an acronym for Cross-Industry Standard Process for Data Mining, is a w
 
 ## Testing
 * In this project, only manual testing has been conducted. The functionality of all aspects of the application has been verified on Streamlit and Heroku, and they operate as intended.
+
+| **Feature**       | **Expected Outcome**                                                       | **Testing Performed**                                            | **Result**                            | **Pass/Fail** |
+|:-----------------:|:--------------------------------------------------------------------------:|:----------------------------------------------------------------:|:-------------------------------------:|:-------------:|
+| Nav links         | Nav links should load the corresponding page                               | Click the nav links                                              | All links open the appropriate pages  | Pass          |
+| Links             | Links should load the appropriate content                                  | Click the kaggle link                                       | Link loads the kaggle mildew data page            | Pass          |
+| Show information checkboxes         | Checkboxes should display the appropriate information when clicked | Click the checkboxes                                                   | Displays the appropriate content           | Pass          |
+| Mildew detection page | User should be able to upload multiple images and each images should be displayed and should display weather the leaf is healthy or infected with a confidence percentage. Then there should be a summary at the bottom of all the images and their results.                                | Upload multiple images to mildew detector | All images are displayed with their results and the summary is displayed at the bottom | Pass          |
+| Upload image button | Clicking this button should allow the user to select an image from their pc                                | Click the upload image button | Loads a popup allowing user to select images from their pc | Pass          |
+| Download prediction link | Clicking this link should allow the user to download the prediction data into a csv file                                | Click the download prediction results link | Prediction data is downloaded as a csv | Pass          |
+| Add new images to mildew detection when there are already images  | User should be able to upload a new image while there are already images loaded                                 | Upload a new image while there are already images loaded | New image is displayed and results are added to the summary and the old images are retained  | Pass          |
+| Remove image "X" button             | This button should remove an image from the detector page and results from the summary                                  | Click the "X" button                                       | Image and results are removed     | Pass          |
+
 
 ### Project Summary
 * Entering the streamlit project your are welcomed to the project summary page containing a short summary of the project.
