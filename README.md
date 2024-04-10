@@ -177,6 +177,8 @@ CRISP-DM, an acronym for Cross-Industry Standard Process for Data Mining, is a w
 ## Bugs
 * During the deployment to Heroku the project size was to big, around 550 MB while the limit on Heroku is 500 MB. To solve this I had to remove most of the images from the input folders to meet the Heroku requirements. I also had to make some changes to the .slugignore file to decompress the project.
 
+* When deploying my project to Heroku I encounter bugs with my RGB chart not loading properly. I tried different solutions in my ml_performance.py and .slugignore with no luck. In the end I decided to remove the RGB chart entirely from the ml_performance.py page.
+
 ## Unfixed Bugs
 * There is no unfixed bugs.
 
@@ -291,3 +293,5 @@ The content presented on the project summary page draws inspiration from:
 
 ## Acknowledgements
 * I would like to thank my mentor Rohit Sharma for guiding me during this project.
+* Code Institute for the code and techniques used during this project.
+* Slack for the help during troubleshooting and bugs.
